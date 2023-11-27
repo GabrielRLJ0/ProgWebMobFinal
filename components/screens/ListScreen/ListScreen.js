@@ -5,7 +5,7 @@ import { fetchEventos } from '../../../service/eventoService';
 import { deletarEvento } from '../DeleteScreen/DeleteScreen';
 import { View, Text, FlatList, TouchableOpacity, Button, useFocusEffect } from 'react-native';
 
-const CORES = ['#8B0000', '#8B0000', '#8B0000', '#8B0000', '#8B0000', '#8B0000', '#8B0000', '#FFC6FF'];
+const CORES = ['#8B0000', '#3DE123', '#FFFFFF', '#40AEFF', '#AC12FF', '#8B0000', '#3DE123', '#FFFFFF'];
 function ListaEventos({ navigation }) {
    
  const [eventos, setEventos] = useState([]);
@@ -24,6 +24,8 @@ return (
     <View style={styles.container}>
       <Button title="Criar Evento" onPress={criarEvento}/>
         <Text>Create Event</Text>
+      <Button title="Deletar Evento" onPress={deletarEvento}/>
+        <Text>Delete Event</Text>
       <FlatList
         data={eventos}
         keyExtractor={(item) => item.id.toString()}
@@ -51,6 +53,9 @@ return (
      };
      function criarEvento(eventoSelecionado) {
       navigation.navigate('CriarEvento', { evento: eventoSelecionado});
+     };
+     function deletarEvento(eventoSelecionado) {
+      navigation.navigate('DeletarEvento', { evento: eventoSelecionado});
      };
    }
   

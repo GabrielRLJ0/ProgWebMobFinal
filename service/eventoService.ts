@@ -41,4 +41,3 @@ export const deleteEvento = async (id: number) => {
       throw new Error('Erro ao criar/atualizar evento');
     }
   };   
-
