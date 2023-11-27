@@ -4,9 +4,9 @@ import { StyleSheet, Text, View } from 'react-native';
 import Button from './components/Button/button';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import ListaEventos from './components/screens/ListaEventos';
-import EdicaoEvento from './components/screens/editar/EditarEvento';
-import CriarEvento from './components/screens/criar/CriarEvento';
+import ListaEventos from './components/screens/ListScreen/ListScreen';
+import EdicaoEvento from './components/screens/EditScreen/EditScreen';
+import CriarEvento from './components/screens/CreateScreen/CreateScreen';
 
 const Stack = createStackNavigator();
 

@@ -1,8 +1,8 @@
 import styles from './style';
 import React, { useEffect, useState } from 'react';
-import { criarEvento } from './criar/CriarEvento';
-import { fetchEventos } from '../../service/eventoService';
-import { deletarEvento } from './deletar/DeletarEvento';
+import { criarEvento } from '../CreateScreen/CreateScreen';
+import { fetchEventos } from '../../../service/eventoService';
+import { deletarEvento } from '../DeleteScreen/DeleteScreen';
 import { View, Text, FlatList, TouchableOpacity, Button, useFocusEffect } from 'react-native';
 
 const CORES = ['#8B0000', '#8B0000', '#8B0000', '#8B0000', '#8B0000', '#8B0000', '#8B0000', '#FFC6FF'];

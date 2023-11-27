@@ -1,5 +1,5 @@
 import axios from 'axios';
-import Evento from '../Core/evento';
+import Evento from '../Core/carta';
 
 interface ApiResponse {
 content: Evento[];
